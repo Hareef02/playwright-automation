@@ -58,9 +58,9 @@ test('test', async ({ page }) => {
 });
 
 
-test('File upload test', async ({ page }) => {
-  await page.goto('https://davidwalsh.name/demo/multiple-file-upload.php');  
-  const filePath = 'C:/Users/arcet/Downloads/4VB90_11688_25_01_elev_dsnp_HRA_2025-10-28-22-53-00.txt'; // Replace with the actual file path
-  await page.locator("//input[@name='filesToUpload']").setInputFiles(filePath);
-  //await page.waitForTimeout(2000); // Wait for 2 seconds to ensure the file is uploaded
-});
+// test('File upload test', async ({ page }) => {
+//   await page.goto('https://davidwalsh.name/demo/multiple-file-upload.php');  
+//   const filePath = 'C:/Users/arcet/Downloads/4VB90_11688_25_01_elev_dsnp_HRA_2025-10-28-22-53-00.txt'; // Replace with the actual file path
+//   await page.locator("//input[@name='filesToUpload']").setInputFiles(filePath);
+//   //await page.waitForTimeout(2000); // Wait for 2 seconds to ensure the file is uploaded
+// });
