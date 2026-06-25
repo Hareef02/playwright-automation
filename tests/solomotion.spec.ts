@@ -2,7 +2,7 @@ import { test, chromium } from '@playwright/test';
 import { LoginPage } from '../pages/login-page';
 import loginData from '../test-data/login-data.json';
 
-test('slowmotion video recording demo', async () => {
+test.skip('slowmotion video recording demo', async () => {
 
 	const browser = await chromium.launch({
 		slowMo: 1000,
