@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  playwright:
+    image: mcr.microsoft.com/playwright:v1.61.0-noble
+    container_name: playwright-tests
+    working_dir: /app
+    volumes:
+      - .:/app
+      - /app/node_modules
+    command: sh -c "npm ci && npx playwright test"

@@ -70,6 +70,6 @@ test('POST /api/data should return 201', async ({ request }) => {
 	expect(response.status()).toBe(201);
 	expect(responseBody.article).toHaveProperty('title', `${currentData.getTime()}`);
 	expect(responseBody.article.description).toBe('Description');
-	const tagList = responseBody.article.tagList;
+	// const tagList = responseBody.article.tagList;
 	//console.log('Response Body:', responseBody);	
 });
