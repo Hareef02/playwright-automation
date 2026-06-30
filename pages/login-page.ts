@@ -33,6 +33,10 @@ export class LoginPage {
 		await expect(this.page).toHaveURL('https://www.saucedemo.com/inventory.html');
 		await this.page.waitForTimeout(2000);
 		await expect(this.page.locator('.title')).toHaveText('Products');
+		await this.page.screenshot({
+			path: 'screenshots/login-success.png',
+			fullPage: true
+		});
 	}
 
 	async verifyLoginFailure() {
